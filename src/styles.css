@@ -35,6 +35,9 @@ nav a:hover {
 nav a.active {
 	color: #039be5;
 }
+p {
+	text-align: justify;
+}
 /* everywhere else */
 * {
 	font-family: Arial, Helvetica, sans-serif;
