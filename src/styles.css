@@ -35,6 +35,21 @@ nav a:hover {
 nav a.active {
 	color: #039be5;
 }
+p {
+	text-align: justify;
+}
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 1em;
+}
+#social a img {
+	padding: 5px;
+}
 /* everywhere else */
 * {
 	font-family: Arial, Helvetica, sans-serif;
