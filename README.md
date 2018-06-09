@@ -1,5 +1,9 @@
 # My Website
 
+[![Website](https://img.shields.io/website-up-down-green-red/http/vendittelli.co.uk.svg?label=my-website)](https://vendittelli.co.uk/)
+[![GitHub issue last update](https://img.shields.io/github/last-commit/SVendittelli/personal-website-ui.svg)](https://github.com/SVendittelli/personal-website-ui)
+[![license](https://img.shields.io/github/license/SVendittelli/personal-website-ui.svg)](https://github.com/SVendittelli/personal-website-ui)
+
 You can find my website [here](www.vendittelli.co.uk).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.0.
