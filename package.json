@@ -25,10 +25,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/SVendittelli/personal-website-ui.git"
+        "url": "git+https://github.com/SVendittelli/svendittelli.github.io.git"
     },
     "author": "Sam Vendittelli <sam.vendittelli@hotmail.com> (https://vendittelli.co.uk)",
-    "homepage": "https://github.com/SVendittelli/personal-website-ui#readme",
+    "homepage": "https://github.com/SVendittelli/svendittelli.github.io#readme",
     "dependencies": {
         "@angular/animations": "6.0.4",
         "@angular/common": "6.0.4",
