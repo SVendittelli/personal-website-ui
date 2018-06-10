@@ -1,0 +1,35 @@
+#.travis.yml
+
+dist: trusty
+
+addons:
+  chrome: stable
+
+language: node_js
+node_js:
+  - "10.4"
+
+branches:
+  only:
+    - master
+
+install:
+  - npm install
+
+script:
+  - npm test
+
+after_success:
+  - npm build:prod
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  on:
+    branch: master
+
+notifications:
+  email:
+    on_failure: change
+    on_success: change

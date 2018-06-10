@@ -5,10 +5,4 @@ import { Component } from '@angular/core';
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-    beginTypingSubtitle: Boolean = false;
-
-    onComplete() {
-        setTimeout(() => this.beginTypingSubtitle = true, 500);
-    }
-}
+export class AppComponent { }

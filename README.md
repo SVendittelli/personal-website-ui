@@ -1,6 +1,7 @@
 # My Website
 
 [![Website](https://img.shields.io/website-up-down-green-red/http/vendittelli.co.uk.svg)](https://vendittelli.co.uk/)
+![Travis](https://img.shields.io/travis/SVendittelli/%20personal-website-ui.svg)
 [![GitHub issue last update](https://img.shields.io/github/last-commit/SVendittelli/personal-website-ui.svg)](https://github.com/SVendittelli/personal-website-ui)
 [![GitHub tag](https://img.shields.io/github/tag/SVendittelli/personal-website-ui.svg)](https://github.com/SVendittelli/personal-website-ui/releases)
 [![license](https://img.shields.io/github/license/SVendittelli/personal-website-ui.svg)](https://github.com/SVendittelli/personal-website-ui/blob/master/LICENSE)
