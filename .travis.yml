@@ -25,9 +25,10 @@ after_success:
 deploy:
   provider: pages
   skip-cleanup: true
-  repo: svendittelli.github.io
+  repo: SVendittelli/svendittelli.github.io
   local_dir: dist/
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  target-branch: master
   on:
     branch: master
 
