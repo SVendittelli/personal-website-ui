@@ -20,14 +20,16 @@ script:
   - npm test
 
 after_success:
-  - npm build:prod
+  - npm run build:prod
 
 deploy:
   provider: pages
   skip-cleanup: true
+  repo: svendittelli.github.io
+  local_dir: dist/
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   on:
-    branch: gh-pages
+    branch: master
 
 notifications:
   email:

@@ -1,12 +1,12 @@
 # My Website
 
 [![Website](https://img.shields.io/website-up-down-green-red/http/svendittelli.github.io.svg)](https://svendittelli.github.io/)
-![Travis](https://img.shields.io/travis/SVendittelli/svendittelli.github.io.svg)
-[![GitHub issue last update](https://img.shields.io/github/last-commit/SVendittelli/svendittelli.github.io.svg)](https://github.com/SVendittelli/svendittelli.github.io)
-[![GitHub tag](https://img.shields.io/github/tag/SVendittelli/svendittelli.github.io.svg)](https://github.com/SVendittelli/svendittelli.github.io/releases)
-[![license](https://img.shields.io/github/license/SVendittelli/svendittelli.github.io.svg)](https://github.com/SVendittelli/svendittelli.github.io/blob/master/LICENSE)
+![Travis](https://img.shields.io/travis/SVendittelli/personal-website-ui.svg)
+[![GitHub issue last update](https://img.shields.io/github/last-commit/SVendittelli/personal-website-ui.svg)](https://github.com/SVendittelli/personal-website-ui)
+[![GitHub tag](https://img.shields.io/github/tag/SVendittelli/personal-website-ui.svg)](https://github.com/SVendittelli/personal-website-ui/releases)
+[![license](https://img.shields.io/github/license/SVendittelli/personal-website-ui.svg)](https://github.com/SVendittelli/personal-website-ui/blob/master/LICENSE)
 
-You can find my website [here](www.vendittelli.co.uk).
+You can find my website [here](https://svendittelli.github.io/).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.0.
 
