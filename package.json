@@ -10,6 +10,7 @@
         "build:prod": "ng build --prod",
         "test": "ng test --code-coverage",
         "test:watch": "ng test --browsers Chrome --watch",
+        "report-coverage": "codecov",
         "lint": "ng lint",
         "e2e": "ng e2e",
         "precommit": "lint-staged"
@@ -51,6 +52,7 @@
         "@types/jasmine": "~2.5.53",
         "@types/jasminewd2": "~2.0.2",
         "@types/node": "^6.0.102",
+        "codecov": "^3.0.2",
         "codelyzer": "^4.2.1",
         "husky": "^0.14.3",
         "jasmine-core": "~2.6.2",
