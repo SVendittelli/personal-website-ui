@@ -1,25 +1,29 @@
-<div>
-    <a routerLink="/home">
-        <img id="logo" src="../assets/D20.svg" alt="D20" width="100" />
+<mat-toolbar class="toolbar" color="primary">
+    <span class="logo_container">
+        <a routerLink="/home">
+            <img class="logo_image" src="../assets/D20.svg" alt="D20" width="100" />
+        </a>
+    </span>
 
-        <span style="display:inline-block; width: 2em;"></span>
+    <span class="small-space"></span>
 
-        <span id="name">
-            <h1 style="display: inline">
-                <span>Sam Vendittelli</span>
-            </h1>
-            <span style="display:inline-block; width: 1em;"></span>
-            <h2 style="display: inline">
-                <span>Scrum Master | Developer</span>
-            </h2>
-        </span>
-    </a>
+    <span class="title">
+        <h1 style="display: inline">
+            <span>Sam Vendittelli</span>
+        </h1>
+        <span style="display:inline-block; width: 1em;"></span>
+        <h2 style="display: inline">
+            <span>Scrum Master | Developer</span>
+        </h2>
+    </span>
 
-    <nav id="routing">
-        <a routerLink="/home">Home</a>
-        <a routerLink="/about">About</a>
-        <a routerLink="/contact">Contact</a>
-    </nav>
-</div>
+    <span class="fill-remaining-space"></span>
 
-<hr>
+    <span>
+        <nav class="routing">
+            <a mat-raised-button routerLink="/home">Home</a>
+            <a mat-raised-button routerLink="/about">About</a>
+            <a mat-raised-button routerLink="/contact">Contact</a>
+        </nav>
+    </span>
+</mat-toolbar>

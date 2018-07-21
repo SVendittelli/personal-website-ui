@@ -1,32 +1,21 @@
-#logo {
-    vertical-align: middle;
-    margin-top: -25px;
+.logo_container {
+    margin: 10px 0px;
 }
 
-#routing {
-    float: right;
+.toolbar {
+    height: 100%;
 }
 
-a {
-    text-decoration: none;
+.fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
 }
 
-nav a {
-	padding: 5px 10px;
-	text-decoration: none;
-    // margin-top: 10px;
-    margin: 10px 5px 0px 0px;
-	display: inline-block;
-	background-color: #eee;
-	border-radius: 4px;
+.small-space {
+    width: 20px;
 }
-nav a:visited, a:link {
-	color: #607D8B;
-}
-nav a:hover {
-	color: #039be5;
-	background-color: #CFD8DC;
-}
-nav a.active {
-	color: #039be5;
+
+.mat-raised-button {
+    margin: 0px 2px;
 }
