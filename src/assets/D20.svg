@@ -1,18 +1,18 @@
-<svg width="250" height="250" xmlns="http://www.w3.org/2000/svg">
+<svg width="620" height="620" xmlns="http://www.w3.org/2000/svg">
     <g>
         <title>background</title>
-        <rect x="-1" y="-1" width="252" height="252" id="canvas_background" fill="none"/>
+        <rect x="-1" y="-1" width="622" height="622" id="canvas_background" fill="none"/>
     </g>
     
     <g>
         <title>D20</title>
-        <g stroke="null" transform="rotate(-180 125,125) " id="svg_1">
-            <polygon stroke="#000000" stroke-width="3" id="svg_2" points="125,2 233,63 233,188 125,248 17,188 17,63" stroke-miterlimit="10" stroke-linejoin="round" fill="none"/>
-            <polygon stroke="#000000" stroke-width="3" id="svg_3" points="125,47 192,161 60,161" stroke-miterlimit="10" stroke-linejoin="round" fill="none"/>
-            <polyline stroke="#000000" stroke-width="3" id="svg_4" points="233,188 192,161 233,63 125,47 17,63 60,161" stroke-miterlimit="10" stroke-linejoin="round" fill="none"/>
-            <line stroke="#000000" stroke-width="3" id="svg_5" y2="48" x2="125" y1="2" x1="125" stroke-miterlimit="10" stroke-linejoin="round" fill="none"/>
-            <polyline stroke="#000000" stroke-width="3" id="svg_6" points="192,161 125,248 60,161 17,188" stroke-miterlimit="10" stroke-linejoin="round" fill="none"/>
+        <g stroke="null" transform="rotate(-180 310,310) " id="svg_1">
+            <polygon stroke="#000000" stroke-width="7" id="svg_2" points="310,5 578,156 578,466 310,615 42,466 42,156" stroke-miterlimit="10" stroke-linejoin="round" fill="none"/>
+            <polygon stroke="#000000" stroke-width="7" id="svg_3" points="310,117 476,399 149,399" stroke-miterlimit="10" stroke-linejoin="round" fill="none"/>
+            <polyline stroke="#000000" stroke-width="7" id="svg_4" points="578,466 476,399 578,156 310,117 42,156 149,399" stroke-miterlimit="10" stroke-linejoin="round" fill="none"/>
+            <line stroke="#000000" stroke-width="7" id="svg_5" y2="119" x2="310" y1="5" x1="310" stroke-miterlimit="10" stroke-linejoin="round" fill="none"/>
+            <polyline stroke="#000000" stroke-width="7" id="svg_6" points="476,399 310,615 149,399 42,466" stroke-miterlimit="10" stroke-linejoin="round" fill="none"/>
         </g>
-        <text fill="#000000" stroke-width="0" x="125" y="160" id="svg_7" font-size="70" font-family="Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve" stroke="#000000" font-weight="normal" font-style="normal">V</text>
+        <text fill="#000000" stroke-width="0" x="310" y="397" id="svg_7" font-size="174" font-family="Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve" stroke="#000000" font-weight="normal" font-style="normal">V</text>
     </g>
 </svg>
