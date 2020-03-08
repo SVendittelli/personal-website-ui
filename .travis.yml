@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - 12
+
+before_script:
+  - npm install -g gulp-cli
+script: npm run build
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  repo: SVendittelli/svendittelli.github.io
+  local_dir: dist/
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  target-branch: master
+  on:
+    branch: master
+
+notifications:
+  email:
+    on_failure: change
+    on_success: change
