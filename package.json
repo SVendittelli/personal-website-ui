@@ -43,6 +43,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-svgmin": "^2.2.0",
     "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0",
     "ts-node": "^8.6.2",
     "typescript": "^3.8.3"
   },

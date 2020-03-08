@@ -13,8 +13,20 @@ html {
   max-width: $width;
   padding: $padding;
   margin: auto;
-  color: #333;
   font-size: 1.2em;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+h1 {
+  color: var(--secondary-color);
+}
+
+a {
+  color: var(--primary-color);
 }
 
 p {
