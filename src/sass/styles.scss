@@ -5,11 +5,13 @@ $padding: 2ch;
 * {
   font-family: Monospace;
   padding: 0;
+  margin: 0;
   text-decoration: none;
 }
 
 // Derived from https://jrl.ninja/etc/1/
 html {
+  height: calc(100% - 2*#{$padding}); // Adjust height for additional padding
   max-width: $width;
   padding: $padding;
   margin: auto;
@@ -17,12 +19,21 @@ html {
 }
 
 body {
+  height: 100%;
   background-color: var(--bg-color);
   color: var(--font-color);
 }
 
+section {
+  padding-top: $padding;
+}
+
 h1 {
   color: var(--secondary-color);
+}
+
+h2 {
+  padding-top: calc(#{$padding} / 2);
 }
 
 a {
@@ -34,10 +45,26 @@ p {
   text-justify: inter-word;
 }
 
+// Make the footer sticky
 footer {
-  position: fixed;
-  bottom: 0;
-  padding-bottom: $padding;
-  width: $width;
+  padding-top: $padding;
+  width: 100%;
+  max-width: $width;
   text-align: center;
+}
+
+.content {
+  min-height: 100%;
+  // equal to footer height
+  margin-bottom: -65px;
+}
+
+.content:after {
+  content: "";
+  display: block;
+}
+
+footer,
+.content:after {
+  height: 65px;
 }
