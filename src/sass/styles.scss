@@ -1,0 +1,31 @@
+$width: 70ch;
+$padding: 2ch;
+
+// Set the font to be monospaced
+* {
+  font-family: Monospace;
+  padding: 0;
+  text-decoration: none;
+}
+
+// Derived from https://jrl.ninja/etc/1/
+html {
+  max-width: $width;
+  padding: $padding;
+  margin: auto;
+  color: #333;
+  font-size: 1.2em;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  padding-bottom: $padding;
+  width: $width;
+  text-align: center;
+}
