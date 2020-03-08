@@ -4,7 +4,7 @@ import htmlmin from 'gulp-htmlmin';
 import inject from 'gulp-inject';
 import rename from 'gulp-rename';
 import sass from 'gulp-sass';
-import uglify from 'gulp-uglify';
+import uglify from 'gulp-uglify-es';
 import postcss from 'gulp-postcss';
 import svgmin from 'gulp-svgmin';
 
@@ -65,7 +65,8 @@ function js() {
     .src(paths.scripts.input)
     .pipe(babel())
     .pipe(rename({ suffix: '.min' }))
-    .pipe(uglify())
+    .pipe(gulp.dest(paths.scripts.output))
+    .pipe(uglify({toplevel:true, mangle: {toplevel: true, properties: true}}))
     .pipe(gulp.dest(paths.scripts.output));
 }
 
