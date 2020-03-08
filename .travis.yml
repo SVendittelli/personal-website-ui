@@ -1,35 +1,20 @@
-#.travis.yml
-
-dist: trusty
-
-addons:
-  chrome: stable
-
 language: node_js
 node_js:
-  - "10.4"
+  - 12
 
-branches:
-  only:
-    - master
+os: linux
 
-install:
-  - npm install
-
-script:
-  - npm test
-  - npm run report-coverage
-
-after_success:
-  - npm run build:prod
+before_script:
+  - npm install -g gulp-cli
+script: npm run build
 
 deploy:
   provider: pages
-  skip-cleanup: true
+  cleanup: false
   repo: SVendittelli/svendittelli.github.io
   local_dir: dist/
-  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  target-branch: master
+  token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  target_branch: master
   on:
     branch: master
 

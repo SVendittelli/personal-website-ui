@@ -1,9 +1,0 @@
-/* Application-wide Styles */
-html,
-body {
-    margin: 0;
-    height: 100%;
-}
-p {
-    text-align: justify;
-}
