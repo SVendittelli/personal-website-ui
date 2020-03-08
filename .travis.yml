@@ -10,11 +10,11 @@ script: npm run build
 
 deploy:
   provider: pages
-  cleanup: false
+  edge: true
   repo: SVendittelli/svendittelli.github.io
-  local_dir: dist/
   token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   target_branch: master
+  local_dir: dist/
   on:
     branch: master
 

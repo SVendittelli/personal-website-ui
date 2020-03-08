@@ -2,6 +2,7 @@
 
 [![Website](https://img.shields.io/website-up-down-green-red/http/svendittelli.github.io.svg)](https://svendittelli.github.io/)
 [![Travis](https://img.shields.io/travis/SVendittelli/personal-website-ui.svg)](https://travis-ci.org/SVendittelli/personal-website-ui)
+[![Known Vulnerabilities](https://snyk.io/test/github/SVendittelli/personal-website-ui/badge.svg?targetFile=package.json)](https://snyk.io/test/github/SVendittelli/personal-website-ui?targetFile=package.json)
 [![GitHub last updated](https://img.shields.io/github/last-commit/SVendittelli/personal-website-ui.svg)](https://github.com/SVendittelli/personal-website-ui)
 [![GitHub tag](https://img.shields.io/github/tag/SVendittelli/personal-website-ui.svg)](https://github.com/SVendittelli/personal-website-ui/releases)
 [![license](https://img.shields.io/github/license/SVendittelli/personal-website-ui.svg)](https://github.com/SVendittelli/personal-website-ui/blob/master/LICENSE)
