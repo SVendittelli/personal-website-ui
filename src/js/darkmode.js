@@ -1,35 +1,33 @@
-var icons = ['at', 'linkedin', 'github', 'facebook', 'twitter'];
+const ICONS = ['at', 'linkedin', 'github', 'facebook', 'twitter'];
 
-var toggleSwitch = document.querySelector(
+const TOGGLE_SWITCH = document.querySelector(
   '.theme-switch input[type="checkbox"]'
 );
 
 // Check first the local storage to see if the user has already stored a preference
 // Then check the user's OS to see if it has a preference
 // Otherwise default to light
-var currentTheme =
+const INITIAL_THEME =
   localStorage.getItem('theme') ||
   (window.matchMedia('(prefers-color-scheme: dark)').matches
     ? 'dark'
     : 'light') ||
   'light';
 
-setTheme(currentTheme);
-toggleSwitch.checked = currentTheme === 'dark';
+setTheme(INITIAL_THEME);
+TOGGLE_SWITCH.checked = INITIAL_THEME === 'dark';
 
 function setTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
   localStorage.setItem('theme', theme);
 
-  for (var icon of icons) {
-    var iconElem = document.getElementById(icon);
-    iconElem.setAttribute('src', `assets/social/${theme}/icon-${icon}.svg`);
+  for (var icon of ICONS) {
+    document.getElementById(icon).setAttribute('src', `assets/social/${theme}/icon-${icon}.svg`);
   }
 }
 
 function switchTheme(event) {
-  var theme = event.target.checked ? 'dark' : 'light';
-  setTheme(theme);
+  setTheme(event.target.checked ? 'dark' : 'light');
 }
 
-toggleSwitch.addEventListener('change', switchTheme, false);
+TOGGLE_SWITCH.addEventListener('change', switchTheme, false);
