@@ -63,3 +63,13 @@ footer,
 .content:after {
   height: 65px;
 }
+
+.icon {
+  width: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .icon {
+    width: 48px;
+  }
+}
