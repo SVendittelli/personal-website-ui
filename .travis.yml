@@ -4,17 +4,16 @@ node_js:
 
 os: linux
 addons:
-  chrome: stable # make sure you have Chrome available
+  chrome: stable # make sure Chrome is available
 
 before_install:
-  - npm install -g @lhci/cli # install LHCI
+  - npm install -g @lhci/cli # install lighthouse CI
 
 before_script:
   - npm install -g gulp-cli
 script:
-  - npm run build
-after_success:
-  - lhci autorun --rc-overrides.upload.target=temporary-public-storage # run lighthouse CI
+  - npm run build # build site
+  - lhci autorun # run lighthouse CI
 
 deploy:
   provider: pages
@@ -28,5 +27,5 @@ deploy:
 
 notifications:
   email:
-    on_failure: change
+    on_failure: always
     on_success: change

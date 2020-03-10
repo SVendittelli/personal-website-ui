@@ -1,1 +1,1 @@
-document.getElementById("now").innerText = moment().format("YYYY");
+document.getElementById("now").innerText = new Date().getFullYear();
