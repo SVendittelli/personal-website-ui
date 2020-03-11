@@ -1,5 +1,12 @@
 {
   "ci": {
+    "collect": {
+      "startServerCommand": "docker-compose up --build",
+      "url": [
+        "http://localhost/",
+        "http://localhost/experience"
+      ]
+    },
     "assert": {
       "preset": "lighthouse:no-pwa",
       "assertions": {

@@ -5,6 +5,8 @@ node_js:
 os: linux
 addons:
   chrome: stable # make sure Chrome is available
+services:
+  - docker
 
 before_install:
   - npm install -g @lhci/cli # install lighthouse CI
@@ -24,6 +26,9 @@ deploy:
   local_dir: dist/
   on:
     branch: master
+
+after_script:
+  - docker-compose down
 
 notifications:
   email:
