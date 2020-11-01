@@ -66,7 +66,7 @@ function js() {
     .pipe(babel())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(paths.scripts.output))
-    .pipe(uglify({toplevel:true, mangle: {toplevel: true, properties: true}}))
+    .pipe(uglify({toplevel:true, mangle: {toplevel: true}}))
     .pipe(gulp.dest(paths.scripts.output));
 }
 

@@ -40,6 +40,18 @@ a {
   color: var(--primary-color);
 }
 
+hr {
+  margin: 0.5em 0;
+}
+
+p {
+  margin: 1em 0;
+}
+
+ul {
+  padding-inline-start: 40px;
+}
+
 // Make the footer sticky
 footer {
   padding-top: $padding;

@@ -1,4 +1,8 @@
 const ICONS = ['at', 'linkedin', 'github', 'facebook', 'twitter'];
+const THEME_COLOR = {
+  light: '#fff',
+  dark: '#161625'
+}
 
 const TOGGLE_SWITCH = document.querySelector(
   '.theme-switch input[type="checkbox"]'
@@ -19,10 +23,13 @@ TOGGLE_SWITCH.checked = INITIAL_THEME === 'dark';
 
 function setTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
+  document.documentElement.querySelector('meta[name=theme-color]').setAttribute('content', THEME_COLOR[theme]);
   localStorage.setItem('theme', theme);
 
   for (var icon of ICONS) {
-    document.getElementById(icon).setAttribute('src', `assets/social/${theme}/icon-${icon}.svg`);
+    document
+      .getElementById(icon)
+      .setAttribute('src', `assets/social/${theme}/icon-${icon}.svg`);
   }
 }
 
